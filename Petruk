@@ -1,2 +1,11 @@
 #include <iostream>
 using namespace std;
+
+#include <bits/stdc++.h>
+using namespace std;
+void PPKM_infixpostfix(string Operator){
+    
+    for (int p=0; p<Operator.length(); p++) {   
+        if(p==0 && Operator[p] == '-' && Operator[p+1]!= '('){
+            cout << Operator[p];
+        }
